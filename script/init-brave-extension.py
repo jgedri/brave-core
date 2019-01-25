@@ -13,7 +13,7 @@ if sys.platform in ['win32', 'cygwin']:
 def main():
     dir_path = os.path.join(os.path.realpath(os.path.dirname(
             os.path.dirname(os.path.realpath(__file__)))),
-            'vendor', 'brave-extension')
+            'components', 'brave_extension', 'extension', 'brave-extension')
     os.chdir(dir_path)
     args = parse_args()
     update_node_modules('.', args.verbose)

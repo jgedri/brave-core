@@ -16,7 +16,7 @@
 
 namespace {
 
-const char kComponentUpdaterProxy[] = "https://componentupdater.brave.com"
+const char kComponentUpdaterProxy[] = "https://componentupdater.brave.com";
 
 class BraveCommonStaticRedirectNetworkDelegateHelperTest: public testing::Test {
  public:
@@ -55,8 +55,7 @@ TEST_F(BraveCommonStaticRedirectNetworkDelegateHelperTest, ModifyComponentUpdate
 
 TEST_F(BraveCommonStaticRedirectNetworkDelegateHelperTest, NoModifyComponentUpdaterURL) {
   net::TestDelegate test_delegate;
-  std::string query_string("?braveRedirect=true");
-  GURL url(std::string(component_updater::kUpdaterDefaultUrl) + query_string);
+  GURL url(kComponentUpdaterProxy);
   std::unique_ptr<net::URLRequest> request =
       context()->CreateRequest(url, net::IDLE, &test_delegate,
                              TRAFFIC_ANNOTATION_FOR_TESTS);

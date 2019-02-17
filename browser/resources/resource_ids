@@ -33,7 +33,7 @@
   "brave/app/theme/brave_unscaled_resources.grd": {
     "includes": [36500],
   },
-  "brave/components/brave_extension/resources.grd": {
+  "brave/components/brave_extension/extension/resources.grd": {
     "includes": [37000],
   },
   "brave/components/brave_sync/resources.grd": {

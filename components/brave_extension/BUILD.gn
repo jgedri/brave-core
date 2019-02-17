@@ -14,7 +14,7 @@ pack_web_resources("generated_resources") {
 }
 
 grit("static_resources") {
-  source = "resources.grd"
+  source = "extension/resources.grd"
 
   grit_flags = [
     "-E",

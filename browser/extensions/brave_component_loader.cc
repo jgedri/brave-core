@@ -95,7 +95,7 @@ void BraveComponentLoader::AddDefaultComponentExtensions(
     base::FilePath brave_extension_path(FILE_PATH_LITERAL(""));
     brave_extension_path =
         brave_extension_path.Append(FILE_PATH_LITERAL("brave_extension"));
-    Add(IDR_BRAVE_EXTENSON, brave_extension_path);
+    Add(IDR_BRAVE_EXTENSION, brave_extension_path);
   }
 
   if (!profile_prefs_->GetBoolean(prefs::kPluginsAlwaysOpenPdfExternally) &&

@@ -25,7 +25,7 @@ def transifex_name_from_filename(source_file_path, filename):
         return filename
     elif 'brave_rewards' in source_file_path:
         return 'rewards_extension'
-    elif 'brave-extension' in source_file_path:
+    elif 'brave_extension' in source_file_path:
         return 'brave_extension'
     assert False, ('JSON files should be mapped explicitly, this '
                    'one is not: ' + source_file_path)
